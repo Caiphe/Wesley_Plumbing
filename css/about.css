@@ -1,0 +1,100 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.myHeading{
+	color: rgb(102, 102, 102);
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-size: 40px;
+	word-break: break-all;
+}
+.thumbs{
+	background-color: #e5e5e5;
+	padding: 10px;
+}
+.team{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size:40px;
+	color:#B40F25;
+	text-align:center;
+	font-family: 'Anton', sans-serif;
+}
+.ourTeam img{
+   box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.5), 0 2px 13px 0 rgba(0, 0, 0, 0.14);
+   border:solid 5px #fff;
+   border-radius: 5px;
+}
+.aboutTit{
+	text-align:center;
+	font-size:35px;
+	color:#f29c13;
+}
+.meet_team .column{
+	float: left;
+	width: 25%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+.meet_team .myCard{
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+
+}
+.meet_team .myCardContent{
+	position: relative;
+	overflow: hidden;
+}
+.meet_team .myCardContent img{
+	max-width: 100%;
+	-moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.meet_team img:hover{
+	-moz-transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+}
+.meet_team .myCard p{
+	font-family: 'Nunito', sans-serif;
+	background: #000000;
+	text-align: center;
+	font-size:17px;
+	color: rgb(231, 209, 12);
+	padding: 7px;
+	transition: 1s;
+}
+.meet_team .myCard p:hover{
+	background-color: rgb(231, 209, 12);
+	color: black;
+}
+@media screen and (max-width: 650px){
+   .meet_team .column{
+   	width: 100%;
+   	display: block;
+   }
+}
+.meet_team .myCardContent::after, .meet_team .row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+#myFlash{
+	font-size: 25px;
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+	animation-iteration-count:1;
+	animation-duration:4s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-duration:4s;
+	-o-animation-iteration-count:1;
+	-o-animation-duration:4s;
+	-moz-animation-iteration-count:1;
+	-moz-animation-duration:4s;
+}
+

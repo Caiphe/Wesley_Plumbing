@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@PrimaryFont : 'Montserrat', sans-serif;
+@PrimaryFont2: 'Roboto Condensed', sans-serif;
+@PrimaryFont3: 'Raleway', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: @PrimaryFont;
+}
+
+.main_body_container{
+  margin-top:100px;
+
+
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+// Buttons Style
+
+#myBtnContainer{
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+  .click-on{
+    margin-top:20px;
+    font-size: 17px;
+    color: rgb(202, 202, 202);
+    font-family: @PrimaryFont3;
+    font-weight: bold;
+  }
+
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 7px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    border:solid 1px #CD5F13;
+    border-radius: 0px;
+    color: #CD5F13;
+    font-weight: bold;
+    margin-bottom: 3px;
+    transition: 1s;
+  }
+  
+  .btn:hover {
+    background-color: #CD5F13;
+    border:solid 1px #CD5F13;
+    color: white;
+  }
+  
+  .btn.active {
+    background-color: #E5BE1C;
+    border:solid 1px rgb(44, 44, 44);
+    color: rgb(44, 44, 44);
+  }
+
+// button Style Ends
+
+.myHeading{
+  color: rgb(102, 102, 102);
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  word-break: break-all;
+  }
+
+  .underline_p{
+    border-top: solid 2px rgb(68, 68, 68);
+    height: 4px;
+    width: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    padding: 10px;
+    transition: 1s;
+  }
+
+  // Mobile and small screens 
+  .row-container{
+    // margin-top: 30px;
+    .column{
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+      margin: 10px;
+    .bottom-container{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      height: 40px;
+      color: #df7513;
+      font-size: 20px;
+      font-family: @PrimaryFont;
+      text-transform: uppercase;
+
+      .before-after-container{
+        flex: 1;
+        text-align: center;
+        font-size: 20px;
+      }
+      .rebuildings{
+        text-transform: lowercase !important;
+        font-size: 17px !important;
+        font-family: @PrimaryFont2;
+        color: #000 !important;
+      }
+    }
+   }
+  }
+  // Mobile and smal screen ends
+
+ /// Desktop and bigger screens 
+  @media screen and (min-width : 800px){
+      .row-container{
+        display: flex;
+
+        .column{
+          background-color: white;
+          flex: 1;
+          position: relative;
+          margin-right: 20px;
+          transition: all .5s ease-in-out;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+          -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+          -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+          -o-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+
+          &:nth-child(1){
+            margin-left: 20px;
+          }
+
+          &:nth-child(3){
+            margin-right: 20px;
+          }
+ 
+          .content{
+            img{
+              width: 100%;
+            }
+          }
+
+          .bottom-container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            height: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #df7513;
+
+            .before-after-container{
+              flex: 1;
+              text-align: center;
+              font-size: 20px;
+              font-family: @PrimaryFont2;
+            }
+
+            .rebuildings{
+              text-transform: lowercase !important;
+              font-size: 17px !important;
+              font-family: @PrimaryFont2;
+              color: #000 !important;
+            }
+          }
+          &:hover{
+          opacity: 0.6;
+          transition: all .5s ease-in-out;
+          }
+        }
+      }
+  }
+
+

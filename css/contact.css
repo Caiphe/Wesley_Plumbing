@@ -1,0 +1,28 @@
+.contactForm input{
+	height: 35px;
+	border-radius: 0px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.contactForm textarea{
+	border-radius: 0px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.contactForm button{
+	background: #dd6f08;
+	padding:10px;
+	text-align: center;
+	font-size: 17px;
+	color: white;
+	font-weight: bold;
+	border-radius: 0px;
+	transition: 1s;
+	border:none;
+	border:solid 1px transparent;
+}
+.contactForm button:hover{
+   background-color: transparent;
+   border:solid 1px #dd6f08;
+   color: #dd6f08;
+}

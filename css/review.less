@@ -1,0 +1,566 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@primaryFont : 'Montserrat', sans-serif;
+@robotoFont: 'Roboto Condensed', sans-serif;
+@raleway: 'Raleway', sans-serif;
+@textColor: #BBBBBB;
+@error_color : rgb(153, 13, 13);
+@successColor: rgb(5, 99, 5);
+
+// Message Style Colors
+@PrimaryMsgColor : #EEEDED;
+@muteColor:#BBBBBB;
+@textColor:#423131;
+
+*{
+  margin:0px;
+  padding:0px;
+}
+.space-between{
+  height: 30px;
+  position: relative;
+}
+
+.thumbnail{
+  padding: 2px !important;
+  border-radius: 5px !important;
+}
+
+.review-heading{
+  height:464px;
+  width: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  -o-background-repeat: no-repeat !important;
+  -moz-background-repeat: no-repeat !important;
+  -webkit-background-repeat: no-repeat !important;
+  background-position:center !important;
+  display:block;
+  position: relative;
+  padding-top:100px;
+  
+  .header-container{
+   margin-top: 70px;
+
+    .myHeading{
+      color:#fff;
+    }
+    .underline{
+      height:5px;
+      background:#fff;
+      width:116px;
+      border:none !important;
+    }
+  }
+  
+}
+
+.main-left-container{
+  position: relative;
+  padding-bottom:50px;
+
+  .complete-form{
+    font-family: @robotoFont;
+    font-weight: normal;
+    line-height: normal;
+    color:rgb(22, 12, 116);
+    font-size: 24px;
+  }
+  .under_line{
+    height:3px;
+    background: rgb(22, 12, 116);
+    width: 110px;
+    margin-bottom: 10px;
+  }
+  #comment_form{
+     margin-top:10px;
+    .form-group{
+      position: relative;
+      margin-bottom: 15px;
+      input{
+        border-radius: 10px;
+        background:#EEEDED;
+        height: 45px;
+        color:rgb(46, 45, 45);
+        border:none;
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 15px;
+        font-family: @robotoFont;
+      }
+      textarea{
+        padding: 10px;
+        background:#EEEDED;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: @robotoFont;
+        padding-left: 18px !important;
+        min-height: 130px;
+        max-height: 230px;
+        color:rgb(46, 45, 45);
+
+        &::-webkit-scrollbar{
+          width:10px;
+        }
+        &::-webkit-scrollbar-thumb{
+          border-radius:5px;
+          background: rgba(0,0,0,.1);
+          width:10px;
+        }
+      }
+      button{
+        
+        height:53px;
+        margin-left:2px;;
+        position: absolute;
+        width:159px;
+        background: #F23378;
+        color: #fff;
+        cursor: pointer;
+        border-radius:10px;
+        font-family: @robotoFont;
+        font-size: 20px;
+        border:none;
+        transition:all .5s ease-in-out;
+        -o-transition:all .5s ease-in-out;
+        -webkit-transition:all .5s ease-in-out;
+        -moz-transition:all .5s ease-in-out;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        -o-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover{
+          transform: translateY(-1px);
+          -webkit-transform: translateY(-1px);
+          margin-top:-2px;
+          background: rgb(14, 73, 14);
+          color:#fff;
+        }
+      }
+    }
+  }
+ 
+  .main-form-container{
+    position: relative;
+  }
+
+    .overlay-div{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      height: 400px;
+      display:inline-block;
+      border:solid 1px #C4C4C4;
+      border-radius:10px;
+
+      .loader-container{
+        display: inline-block;
+      }
+    }
+}
+
+.reviews-details-container{
+  border-radius: 20px;
+  height: auto;
+  padding-bottom: 100px;
+  background:#fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-top:-90px;
+  z-index:999;
+  position: relative;
+  padding:45px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .image-container-right{
+     display: block;
+     margin-bottom: 10px;
+     box-shadow: 0px 2px 2px #cdcdcd;
+     border-radius: 5px;
+
+     .my-gif-img{
+       border-radius: 20px;
+     }
+
+     img{
+      width:100%;
+      border-radius: 10px;
+     }  
+  }
+
+  #latest-gif{
+    border:solid 1px #cdcdcd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px #cdcdcd;
+  }
+}
+
+.litle-bar{
+  height:40px;
+  background: #428BCA;
+  margin-top:30px;
+}
+
+.bottom-social-banner{
+  margin-top: -26px;
+  position: relative;
+  display: block;
+  height: 400px;
+  margin-bottom: -70px;
+  padding-top:130px;
+
+  .contact-details-container{
+    padding-top:40px;
+    .contact-details{
+      font-family: @primaryFont;
+      font-weight: bold;
+      color:#000;
+      font-weight: 800;
+      span{
+        color: red;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.bottom-footer{
+  height: 140px;
+  background: #D1AD0A;
+  padding-top:40px;
+  width: 100%;
+  text-align: center;
+  p{
+    font-size:16px;
+    font-family: @robotoFont;
+    text-align: center;
+  }
+  a{
+    padding: 8px 17px;
+    background: #fff;
+    margin-top: 30px;
+    color: #428BCA;
+    transition: all .3s ease-in-out;
+    &:hover{
+      background: #428BCA;;
+      color: #fff;
+
+    }
+  }
+}
+
+.comments-container{
+  margin-top: 105px;
+  position: relative;
+
+  .comment-count{
+    font-size: 18px;
+    color:#BBBBBB;
+    font-family: @robotoFont;
+    font-weight: normal;
+  }
+  .comment_under_line{
+    height: 4px;
+    background:  #C4C4C4;
+    width: 100%;
+    margin-bottom:10px;
+  }
+}
+
+
+
+#comment_error{
+  display:none;
+}
+
+.errorlist{
+  display: none;
+  color: #fff;
+  padding:5px 10px;
+  background:@error_color;
+  width:200px;
+  text-align: center;
+  border-radius:5px;
+  position: absolute;
+  z-index:99999;
+  margin-top:-5px;
+  font-size:15px;
+  font-weight: lighter;
+  font-family: @primaryFont;
+  -webkit-transition: top 0.3s ease-in-out,opacity 0.3s ease-in-out;
+  -moz-transition: top 0.3s ease-in-out,opacity 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out,opacity 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out,opacity 0.3s ease-in-out;
+  box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.548);
+    &:before{
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 20%;
+      margin-left: -5px;
+      border-width: 10px;
+      border-style: solid;
+      border-color:  transparent transparent @error_color transparent;
+    }
+}
+
+.success-icons{
+  position: absolute;
+  right: 0;
+  margin-top:-45px;
+  margin-right:10px;
+  color:@successColor;
+  font-size:20px;
+  display:none;
+}
+
+#success_name, #success_comment {
+   animation-duration: 2;
+   -moz-animation-duration: 2;
+   -o-animation-duration: 2;
+   -webkit-animation-duration: 2;
+}
+
+
+// Comment Div
+.comment-cont{
+   width:100%;
+   min-height:165px;
+   position: relative;
+   margin-top:20px;
+
+    // User Thumnal Style
+   .inner-comment-one{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width:10%;
+     img{
+      display: block;
+     }
+   }
+  // User thumnail Style Ends
+
+  // All The comment details go in here
+   .inner-comment-two{
+    padding:14px 25px 4px 25px;
+    position: relative;
+     left:25%;
+     top: 0;
+     width: 80%;
+     background:@PrimaryMsgColor;
+     border-top:solid 1px rgb(192, 192, 192);
+     border-radius: 11px ;
+
+     &:before{
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 20px;
+      margin-left: -5px;
+      border-width: 16px 30px;
+      border-style: solid;
+      border-color:  transparent @PrimaryMsgColor transparent  transparent;
+    }
+    
+    .comment-first-div{ 
+      border-bottom:solid 1px #C4C4C4;
+
+      .names{
+        color:@muteColor;
+      }
+
+      .icon-inner, svg {
+        display: block;
+        fill: red;
+        stroke: currentColor;
+        height: 100%;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .user-name{
+       color:rgb(29, 45, 139);
+       font-style: italic;
+       font-size:15px;
+       font-family: @raleway;
+    }
+
+    .likes-count{
+      position: absolute;
+      right:20px;
+      top:10px;
+      color:#BBBBBB;
+
+      .heart-icon{
+        font-size: 20px;
+        margin-top: 5px;
+        color:#B11313;
+        cursor: pointer;
+        transition:all .3s ease-in-out;
+        -o-transition:all .3s ease-in-out;
+        -moz-transition:all .3s ease-in-out;
+        -webkit-transition:all .3s ease-in-out;
+        border:solid 1px transparent;
+
+        &:hover{
+          color:@successColor;
+        }
+      }
+    }
+  }
+  .comment-second-div{
+    margin-top:10px;
+
+    .actual-comment{
+      font-size: 15px;
+      color:@textColor;
+      font-family: @raleway;
+      line-height: 20px;
+    }
+  }
+
+  .coment-third-div{
+    border-top: solid 1px #C4C4C4;
+    padding-top:5px;
+
+    .date_time{
+      font-size: 13px;
+      color:@muteColor;
+      font-family: @robotoFont;
+    }
+
+    .my_arrow_down{
+      font-size: 18px;
+      margin-top:10px;
+    }
+  }
+ }
+}
+
+// comment_alert
+.comment_alert{
+   left: 0px;
+    bottom:0px;
+    margin-left: 20px;
+    margin-bottom: 45px;
+    z-index: 9999;
+    position: fixed;
+    height: 60px;
+    width: 300px;
+    font-size:13px;
+    background-color:@PrimaryMsgColor;
+    color:rgb(0, 0, 0);
+    box-shadow: -0px 1px 3px 0px rgba(148, 145, 145, 0.75);
+    -webkit-box-shadow: -0px 1px 3px 0px rgba(148, 145, 145, 0.75);
+    -moz-box-shadow: -0px 1px 3px 0px rgba(148, 145, 145, 0.75);
+    transition: 0.5s;
+    border-radius: 3px;
+    padding: 15px;
+    padding-top:17px;
+    padding-left:30px;
+    border-left:solid 30px rgb(20, 116, 7);
+
+}
+
+@media screen and(max-width:1210px){
+  .comment-cont{
+    margin-top: 40px;
+  }
+
+}
+@media screen and(max-width:620px){
+  .right-containers{
+    display: none;
+  }
+
+  .comment-cont{
+      margin-top: 20px;
+       .inner-comment-one{
+        margin-left:-20px;
+      }
+      .inner-comment-two{
+      margin-right:-20px !important;
+    }
+  }
+
+  .reviews-details-container {
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+
+   .bottom-social-banner .contact-details-container .contact-details {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: 800;
+    font-size: 1em;
+  }
+}
+@media screen and(max-width:410px){
+  .right-containers{
+    display: none;
+  }
+  .comment-cont{
+      margin-top: 70px;
+     .inner-comment-one{
+      margin-left:-20px;
+    }
+    .inner-comment-two{
+    margin-right:-20px !important;
+  }
+}
+
+  .image-container-right{
+    display: none;
+  }
+  .image-container-right{
+    display: none;
+  }
+
+  .bottom-social-banner .contact-details-container .contact-details {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: 800;
+    font-size: 1em;
+  }
+
+}
+@media screen and(max-width:350px){
+  .right-containers{
+    display: none;
+  }
+  .comment-cont{
+      margin-top: 90px;
+     .inner-comment-one{
+      margin-left:-20px;
+    }
+    .inner-comment-two{
+    margin-right:-20px !important;
+  }
+}
+
+  .image-container-right{
+    display: none;
+  }
+  .image-container-right{
+    display: none;
+  }
+  .bottom-social-banner .contact-details-container .contact-details {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: 800;
+    font-size: 1em;
+  }
+}
+
+// Error and Success classese

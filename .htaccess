@@ -1,0 +1,9 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^home-welcome$   index.php [L]
+RewriteRule ^about-wesley-plumbing$   about.php [L]
+RewriteRule ^what-we-do$   services.php [L]
+RewriteRule ^our-reviews$   review.php [L]
+RewriteRule ^our-gallery$   gallery.php [L]
+RewriteRule ^contact-us$   contact.php [L]

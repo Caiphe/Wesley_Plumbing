@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+.heading_container {
+  position: relative;
+  margin-top: 100px;
+}
+.myHeading {
+  color: #666666;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  word-break: break-all;
+  font-weight: bold;
+}
+.ourServices {
+  transition: 1s;
+  padding: 10px;
+}
+.ourServices .services_box {
+  border-width: 2px;
+  border-style: solid;
+  color: #353232;
+  padding: 20px;
+  background: #fff;
+  -webkit-box-shadow: -1px 1px 8px -6px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -1px 1px 8px -6px rgba(0, 0, 0, 0.51);
+  box-shadow: -1px 1px 8px -6px rgba(0, 0, 0, 0.51);
+  border-color: rgba(87, 87, 87, 0.07);
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.ourServices .services_box #serv {
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: #0f0655;
+  font-size: 20px;
+}
+.ourServices .services_box .service_details {
+  color: #0f0655;
+  font-size: 15px;
+}
+.ourServices .services_box .bottom_services {
+  position: absolute;
+  background: #ff9900;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 0%;
+  transition: 1s;
+}
+.ourServices .services_box .bottom_services:hover {
+  width: 100%;
+}
+.ourServices .services_box:hover {
+  background: #2d2d77;
+  -webkit-box-shadow: 6px 6px 30px -8px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 6px 6px 30px -8px rgba(0, 0, 0, 0.46);
+  box-shadow: 6px 6px 30px -8px rgba(0, 0, 0, 0.46);
+  transform: translate(0, -10px);
+}
+.ourServices .services_box:hover .bottom_services {
+  width: 100%;
+}
+.ourServices .services_box:hover #serv {
+  color: #ff9900;
+}
+.ourServices .services_box:hover .service_details {
+  color: #fff;
+}
+.underLines {
+  border-top: solid 2px #444444;
+  height: 4px;
+  width: 80px;
+  text-align: center;
+}

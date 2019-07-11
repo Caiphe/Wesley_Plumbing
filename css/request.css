@@ -1,0 +1,99 @@
+
+	.mainSec{
+		display: flex;
+		margin: 130px auto;
+		padding: 10px;
+		border-radius: 10px;
+		background-color: #fcfcfc;
+		width: 60%;
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5), 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	}
+
+	 .flex1 input, .flex1 select{
+		margin-bottom: 10px;
+		border:solid 1px #878787;
+		border-radius: 3px;
+		height: 32px;
+		font-size: 15px;
+		padding-left: 10px;
+		width: 100%;
+	}
+	.flex2{
+		background-color: #9fbfd8;
+		height: 100%;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.requestTitle{
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		color: #969694;
+	}
+	#btnReset{
+		padding: 10px;
+		font-size: 15px;
+		font-weight: bold;
+		background-color: #ededed;
+		color: #ed6c09;
+		width: 100%;
+		border-radius: 27px;
+		border:solid 1px transparent;
+		transition: 1s;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+	}
+	#btnReset:hover{
+		font-weight: bold;
+		background-color: #ed6c09;
+		width: 100%;
+		color: white;
+		border-radius: 27px;
+		border:solid 1px white;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+	}
+	#btnSubmit{
+		padding: 10px;
+		font-size: 15px;
+		font-weight: bold;
+		background-color: #ed6c09;
+		width: 100%;
+		color: white;
+		border-radius: 27px;
+		border:solid 1px transparent;
+		transition: 1s;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+		margin-bottom: 10px;
+	}
+	#btnSubmit:hover{
+		border-radius: 27px;
+		background-color: transparent;
+		color: #ed6c09;
+		border:solid 1px #ed6c09;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+	}
+	.downloadLink{
+		margin-top: 10px;
+		color: red;
+		text-align: center;
+		transition: 0.5s;
+		text-decoration: none !important;
+		text-decoration-style: none !important;
+	}
+	.downloadLink:hover{
+        text-decoration: none;
+        color: #f7a400;
+        text-decoration-style: none !important;
+        text-decoration: none !important;
+	}
+	@media screen and (min-width: 768px){
+		mainSec{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		article{
+			flex: 0 1 50%;
+			padding: 10px;
+		}
+	}
